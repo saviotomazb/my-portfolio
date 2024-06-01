@@ -1,8 +1,9 @@
 :root {
-    --cor-de-fundo: #000;
-    --branco-principal: #fff;
-    --fonte: 'Open Sans';
-    --cor-menu: #747171;
+    --cor-de-fundo: #00162A;
+    --branco-principal: #fcfaf9;
+    --fonte: 'Poppins';
+    --cor-letra-menu: #8593c4;
+    --cor-letra-logotipo: #a0db9b;
 }
 
 * {
@@ -22,8 +23,8 @@ body {
     height: 8vh;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding: 1em 0;
-    border-bottom: 0.1em solid var(--cor-menu);
 }
 
 .menu__itens {
@@ -36,8 +37,10 @@ body {
 
 .logotipo {
     padding-left: 2em;
-    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
     animation: slideInRight 1s forwards;
+    color: var(--cor-letra-logotipo);
 }
 
 .menu__itens li {
@@ -46,7 +49,7 @@ body {
 }
 
 .menu__itens li a {
-    color: var(--cor-menu);
+    color: var(--cor-letra-menu);
     text-decoration: none;
     font-size: 18px;
     padding: 0.5em;
