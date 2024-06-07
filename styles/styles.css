@@ -41,14 +41,11 @@ body {
     padding-left: 2em;
     font-size: 30px;
     font-weight: 700;
-    animation: slideInRight 1s forwards;
     color: var(--cor-letra-logotipo);
 }
 
 .menu__itens li {
-    margin-left: 1em;
-    animation: slideInLeft 1s forwards;
-}
+    margin-left: 1em;}
 
 .menu__itens li a {
     color: var(--cor-letra-menu);
@@ -144,4 +141,26 @@ body {
     font-weight: 700;
     transition: opacity 0.5s ease;
     color: var(--branco-principal);
+}
+
+.rodape {
+    color: var(--cor-letra-apresentacao-texto);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.rodape img {
+    width: 2em;
+    margin: 0 0.5em;
+}
+
+.rodape p {
+    margin: 0 2em;
+}
+
+.rodape a {
+    display: flex;
 }
