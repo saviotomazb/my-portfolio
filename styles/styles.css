@@ -1,11 +1,11 @@
 :root {
     --cor-de-fundo: #FCFCFF;
-    --branco-principal: #191919;
+    --cor-letra-titulo: #191919;
     --fonte: 'Poppins';
+    --cor-letra-texto: #4d4d4d;
     --cor-letra-menu: #4d4d4d;
-    --cor-letra-logotipo: #577ae4;
-    --cor-letra-apresentacao-nome: #191919;
-    --cor-letra-apresentacao-texto: #4d4d4d;
+    --cor-destaque: #577ae4;
+    --cor-letra-apresentacao: #191919;
 }
 
 * {
@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+ /* MEU MENU */
 
 .menu {
     display: flex;
@@ -33,7 +34,6 @@ body {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    /*padding: 1em 0;*/
     flex-shrink: 0;
 }
 
@@ -45,7 +45,8 @@ body {
 }
 
 .menu__itens li {
-    margin-left: 1em;}
+    margin-left: 1em;
+}
 
 .menu__itens li a {
     color: var(--cor-letra-menu);
@@ -54,6 +55,14 @@ body {
     padding: 0.5em;
     font-weight: 700;
 }
+
+/* FINAL */
+
+/* MENU DE TESTE */
+
+
+
+/* FINAL */
 
 @keyframes slideInRight {
     0% {
@@ -81,29 +90,31 @@ body {
 
 .imagem__perfil {
     width: 80%;
-    max-width: 100%;
+    padding: 3em;
     animation: slideInLeft 2s forwards;
     border-radius: 50%;
 }
 
 .apresentacao {
     align-items: center;
-    /*padding-top: 2em;*/
 }
 
 .container__descricao {
     text-align: right;
     padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .descricao__nome {
-    color: var(--cor-letra-apresentacao-nome);
+    color: var(--cor-letra-apresentacao);
     animation: slideInRight 1.5s forwards;
     padding-bottom: 0.5em;
 }
 
 .descricao__texto {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-texto);
     padding-left: 8em;
     text-align: justify;
     animation: slideInRight 2s forwards;
@@ -116,67 +127,68 @@ body {
 
 .container__imagem {
     display: flex;
-    background-color: var(--cor-letra-logotipo);
-    height: 70vh;
-    width: 70vh;
+    background-color: var(--cor-destaque);
+    max-width: 70%;
     justify-content: center;
     align-items: center;
-    margin-left: 1em;
     border-radius: 1.2em;
     animation: slideInLeft 1.5s forwards;
 }
 
+.outroteste {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+.botaoteste {
+    animation: slideInRight 3s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 .container__botao {
-    animation: slideInRight 2s forwards;
     border-radius: 5px;
     padding: 0.7em;
-    background-color: var(--cor-letra-menu);
-    display: inline-block;
+    background-color: var(--cor-letra-texto);
     text-decoration: none;
     font-weight: 700;
     transition: opacity 0.5s ease;
     color: var(--cor-de-fundo);
+    margin-left: 0.5em;
 }
 
 .rodape {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-texto);
     font-size: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2em 0;
     flex-shrink: 0;
-    /*position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2em 0;*/
+}
+
+#btn1 {
+    animation: slideInRight 3s forwards;
 }
 
 .rodape img {
-    width: 2em;
+    width: 1.5em;
     margin: 0 0.5em;
-}
-
-.rodape p {
-    /*margin: 0 2em;*/
 }
 
 .rodape a {
     display: flex;
 }
 
-/* SOBRE */
-
 .container__sobre {
     display: flex;
     flex-direction: column;
     padding: 0 9em;
     flex: 1;
-    /*margin-top: 2em;*/
 }
 
 .container__autodescricao {
@@ -185,14 +197,14 @@ body {
 }
 
 .autodescricao__titulo {
-    color: var(--branco-principal);
+    color: var(--cor-letra-titulo);
     font-weight: 600;
     font-size: 30px;
     padding-bottom: 0.5em;
 }
 
 .autodescricao__texto {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-texto);
     padding-left: 2em;
     text-align: justify;
 }
@@ -203,29 +215,30 @@ body {
 }
 
 .descricao__titulo {
-    color: var(--branco-principal);
+    color: var(--cor-letra-titulo);
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 0.5em;
 }
 
 .descricao__instituicao {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-texto);
 }
 
 .experiencia__titulo {
-    color: var(--branco-principal);
+    color: var(--cor-letra-titulo);
     font-weight: 600;
     font-size: 20px;
     padding-bottom: 0.5em;
 }
 
 .experiencia__texto {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-texto);
+    font-weight: 600;
 }
 
 .experiencia {
-    border: 2px solid var(--cor-letra-logotipo);
+    border: 2px solid var(--cor-destaque);
     border-radius: 15px;
     padding: 1em 1em;
     width: auto;
@@ -239,7 +252,7 @@ body {
 }
 
 .formacao {
-    border: 2px solid var(--cor-letra-logotipo);
+    border: 2px solid var(--cor-destaque);
     border-radius: 15px;
     padding: 1em 1em;
     width: 60%;
@@ -275,27 +288,24 @@ body {
     border-radius: 50%;
 }
 
-/* PROJETOS */
-
 .container__projetos {
     display: flex;
     flex: 1;
     align-items: center;
-    /*margin: 2em 9em;*/
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 4em;
+    gap: 2em;
+    padding: 0 2em;
     justify-content: center;
 }
 
 .projetos__sobre {
-    border: 2px solid var(--cor-letra-logotipo);
+    border: 2px solid var(--cor-destaque);
     border-radius: 15px;
     height: 20em;
     width: 24em;
     overflow: hidden;
     transition: border-color 0.3s;
-    /*transition: width 0.8s ease, height 0.8s ease;*/
 }
 
 .projetos__sobre div {
@@ -312,20 +322,160 @@ body {
 .projetos__sobre:hover {
     cursor: pointer;
     border-color: #0040ff;
-    /*width: 25em;
-    height: 21em;*/
 }
 
 .projetos__sobre p {
-    margin-left: 0.7em;
+    padding-left: 0.7em;
 }
 
 .titulo__projeto {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-titulo);
     font-weight: 600;
 }
 
 .texto__projeto {
-    color: var(--cor-letra-apresentacao-texto);
+    color: var(--cor-letra-texto);
     font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* MENU */
+
+    
+
+    /* FINAL */
+
+    .container__descricao{
+        padding: 1em 2em;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        order: 2;
+    }
+
+    .descricao__texto {
+        padding: 0;
+        text-align: justify;
+    }
+
+    .botaoteste {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .imagem__perfil {
+        padding: 1em;
+    }
+
+    .outroteste {
+        padding: 2em;
+        order: 1;
+        max-width: 50%;
+    }
+
+    .container__imagem{
+        max-width: 100%;
+    }
+
+    .container__projetos {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 2em;
+    }
+
+    .descricao__instituicao{
+        display: block;
+    }
+
+    .autodescricao__texto {
+        padding: 0;
+    }
+
+    .experiencia{
+        margin-left: 0;
+    }
+
+    .projetos__sobre{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .projetos__sobre img {
+        max-width: 100%;
+        vertical-align: middle;
+        height: auto;
+    }
+
+    .projetos__sobre div {
+        max-width: 100%;
+        vertical-align: middle;
+        height: auto;
+    }
+
+    .projetos__sobre .texto__projeto {
+        padding-bottom: 3em;
+    }
+
+    .projetos__sobre p {
+        text-align: justify;
+        padding-right: 0.7em;
+    }
+
+    .container__sobre {
+        padding: 0 2em;
+    }
+
+    .container__formacao{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formacao{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .formacao__experiencia{
+        padding-top: 1em;
+        margin-left: 0;
+    }
+
+    #formacao1{
+        margin-bottom: 1em;
+    }
+
+    .imagem__sobre {
+        max-width: 100%;
+        vertical-align: middle;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .experiencia {
+        max-width: 70%;
+        width: auto;
+    }
+
+    .rodape {
+        padding: 2em 2em;
+    }
 }

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var path = window.location.pathname;
     path = path.replace(/^\/|\/$/g, '');
     var links = document.querySelectorAll('.menu__itens a');
-    var defaultColor = getComputedStyle(document.documentElement).getPropertyValue('--branco-principal');
+    var defaultColor = getComputedStyle(document.documentElement).getPropertyValue('--cor-letra-titulo');
     links.forEach(function(link) {
         var href = link.getAttribute('href');
         if (path === href) {
