@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
-    const navLink = document.querySelectorAll(".nav-link");
+    const hamburger = document.querySelector(".header__hamburguer--mod");
+    const navMenu = document.querySelector(".header__menu--expand");
+    const navLink = document.querySelectorAll(".header__link--mod");
     navLink.forEach(n => n.addEventListener("click", closeMenu));
     hamburger.addEventListener("click", mobileMenu);
     function mobileMenu() {
@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
         navMenu.classList.remove("active");
     }
     window.addEventListener('scroll', function() {
-        var header = document.querySelector('.header');
+        var header = document.querySelector('.header--mod');
         if (window.scrollY > 0) {
-            header.classList.add('nav-shadow');
+            header.classList.add('header--shadow');
         } else {
-            header.classList.remove('nav-shadow');
+            header.classList.remove('header--shadow');
         }
     });
     document.body.style.opacity = "1";
     var path = window.location.pathname;
     path = path.replace(/^\/|\/$/g, '');
-    var links = document.querySelectorAll('.nav-link');
+    var links = document.querySelectorAll('.header__link');
     var defaultColor = getComputedStyle(document.documentElement).getPropertyValue('--cor-letra-titulo');
     links.forEach(function(link) {
         var href = link.getAttribute('href');
