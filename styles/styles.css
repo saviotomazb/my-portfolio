@@ -186,6 +186,8 @@ body {
 
 /* PAGINA INDEX FINAL FINALIZADA*/
 
+/* RODAPE FINALIZADO */
+
 .rodape {
     color: var(--cor-letra-texto);
     font-size: 12px;
@@ -196,14 +198,16 @@ body {
     flex-shrink: 0;
 }
 
-.rodape img {
+.rodape__logotipo {
     width: 1.5em;
     margin: 0 0.5em;
 }
 
-.rodape a {
+.rodape__link {
     display: flex;
 }
+
+/* RODAPE FINAL FINALIZADO */
 
 .container__sobre {
     display: flex;
@@ -309,6 +313,8 @@ body {
     border-radius: 50%;
 }
 
+/* PAGINA PROJETOS */
+
 .container__projetos {
     display: flex;
     flex: 1;
@@ -327,6 +333,16 @@ body {
     width: 24em;
     overflow: hidden;
     transition: border-color 0.3s;
+}
+
+.titulo__projeto {
+    color: var(--cor-letra-titulo);
+    font-weight: 600;
+}
+
+.texto__projeto {
+    color: var(--cor-letra-texto);
+    font-weight: 300;
 }
 
 .projetos__sobre div {
@@ -349,15 +365,7 @@ body {
     padding-left: 0.7em;
 }
 
-.titulo__projeto {
-    color: var(--cor-letra-titulo);
-    font-weight: 600;
-}
-
-.texto__projeto {
-    color: var(--cor-letra-texto);
-    font-weight: 300;
-}
+/* PAGINA PROJETOS FINAL */
 
 @media screen and (max-width: 768px) {
     /*MENU PARA EDITAR FINALIZADO*/
@@ -463,12 +471,45 @@ body {
 
     /* FINAL INDEX */
 
+    /* PROJETOS */
+
     .container__projetos {
         display: flex;
         flex-direction: column;
         gap: 2em;
         padding: 2em 2em;
     }
+
+    .projetos__sobre{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .projetos__sobre div {
+        max-width: 100%;
+        vertical-align: middle;
+        height: auto;
+    }
+
+    .projetos__sobre img {
+        max-width: 100%;
+        vertical-align: middle;
+        height: auto;
+    }
+
+
+    .projetos__sobre .texto__projeto {
+        padding-bottom: 3em;
+    }
+
+    .projetos__sobre p {
+        text-align: justify;
+        padding-right: 0.7em;
+    }
+
+    /* FINAL PROJETOS */
 
     .descricao__instituicao{
         display: block;
@@ -480,34 +521,6 @@ body {
 
     .experiencia{
         margin-left: 0;
-    }
-
-    .projetos__sobre{
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .projetos__sobre img {
-        max-width: 100%;
-        vertical-align: middle;
-        height: auto;
-    }
-
-    .projetos__sobre div {
-        max-width: 100%;
-        vertical-align: middle;
-        height: auto;
-    }
-
-    .projetos__sobre .texto__projeto {
-        padding-bottom: 3em;
-    }
-
-    .projetos__sobre p {
-        text-align: justify;
-        padding-right: 0.7em;
     }
 
     .container__sobre {
