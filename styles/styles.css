@@ -186,133 +186,6 @@ body {
 
 /* PAGINA INDEX FINAL FINALIZADA*/
 
-/* RODAPE FINALIZADO */
-
-.rodape {
-    color: var(--cor-letra-texto);
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em 0;
-    flex-shrink: 0;
-}
-
-.rodape__logotipo {
-    width: 1.5em;
-    margin: 0 0.5em;
-}
-
-.rodape__link {
-    display: flex;
-}
-
-/* RODAPE FINAL FINALIZADO */
-
-.container__sobre {
-    display: flex;
-    flex-direction: column;
-    padding: 0 9em;
-    flex: 1;
-}
-
-.container__autodescricao {
-    width: 100%;
-    padding-bottom: 4em;
-}
-
-.autodescricao__titulo {
-    color: var(--cor-letra-titulo);
-    font-weight: 600;
-    font-size: 30px;
-    padding-bottom: 0.5em;
-}
-
-.autodescricao__texto {
-    color: var(--cor-letra-texto);
-    padding-left: 2em;
-    text-align: justify;
-}
-
-.container__formacao {
-    display: grid;
-    grid-template-columns: 70% 30%;
-}
-
-.descricao__titulo {
-    color: var(--cor-letra-titulo);
-    font-weight: 600;
-    font-size: 20px;
-    padding-bottom: 0.5em;
-}
-
-.descricao__instituicao {
-    color: var(--cor-letra-texto);
-}
-
-.experiencia__titulo {
-    color: var(--cor-letra-titulo);
-    font-weight: 600;
-    font-size: 20px;
-    padding-bottom: 0.5em;
-}
-
-.experiencia__texto {
-    color: var(--cor-letra-texto);
-    font-weight: 600;
-}
-
-.experiencia {
-    border: 2px solid var(--cor-destaque);
-    border-radius: 15px;
-    padding: 1em 1em;
-    width: auto;
-    margin-left: 2em;
-    margin-bottom: 0.5em;
-    transition: border-color 0.3s;
-}
-
-.experiencia:hover {
-    border-color: #0040ff;
-}
-
-.formacao {
-    border: 2px solid var(--cor-destaque);
-    border-radius: 15px;
-    padding: 1em 1em;
-    width: 60%;
-    margin-left: 2em;
-    margin-bottom: 0.5em;
-    transition: border-color 0.3s;
-    display: flex;
-    gap: 2em;
-    align-items: center;
-}
-
-.formacao:hover {
-    cursor: pointer;
-    border-color: #0040ff;
-}
-
-#titulo {
-    font-weight: 600;
-}
-
-#instituicao {
-    font-weight: 300;
-    font-size: 15px;
-}
-
-#ano {
-    font-weight: 300;
-    font-size: 13px;
-}
-
-.imagem__sobre {
-    width: 15%;
-    border-radius: 50%;
-}
-
 /* PAGINA PROJETOS FINALIZADA */
 
 .projeto {
@@ -374,6 +247,159 @@ body {
 
 /* PAGINA PROJETOS FINAL FINALIZADA */
 
+/* PAGINA SOBRE */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    padding: 0 9em;
+    flex: 1;
+}
+
+.sobre__descricao {
+    width: 100%;
+    padding-bottom: 4em;
+}
+
+.sobre__descricaotitulo {
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 0.5em;
+}
+
+.sobre__descricaotitulo--mod {
+    color: var(--cor-letra-titulo);
+}
+
+.sobre__descricaotexto {
+    padding-left: 2em;
+    text-align: justify;
+}
+
+.sobre__descricaotexto--mod {
+    color: var(--cor-letra-texto);
+}
+
+.sobre__formacao {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.sobre__formacaotitulo {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 0.5em;
+}
+
+.sobre__formacaotitulo--mod {
+    color: var(--cor-letra-titulo);
+}
+
+.sobre__formacaofundo {
+    padding: 1em 1em;
+    width: 60%;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.sobre__formacaofundo--mod {
+    border: 2px solid var(--cor-destaque);
+    border-radius: 15px;
+    transition: border-color 0.3s;
+}
+
+.sobre__formacaofundo--mod:hover {
+    cursor: pointer;
+    border-color: #0040ff;
+}
+
+.sobre__formacaoimagem {
+    width: 15%;
+    border-radius: 50%;
+}
+
+.sobre__formacaoinstituicao--mod {
+    color: var(--cor-letra-texto);
+}
+
+.sobre__formacaoinstituicao--titulo {
+    font-weight: 600;
+}
+
+.sobre__formacaoinstituicao--instituicao {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.sobre__formacaoinstituicao--ano {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.sobre__experienciatitulo {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 0.5em;
+}
+
+.sobre__experienciatitulo--mod {
+    color: var(--cor-letra-titulo);
+}
+
+.sobre__experienciafundo {
+    padding: 1em 1em;
+    width: auto;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+.sobre__experienciafundo--mod {
+    border: 2px solid var(--cor-destaque);
+    border-radius: 15px;
+    transition: border-color 0.3s;
+}
+
+.sobre__experienciafundo--mod:hover {
+    border-color: #0040ff;
+    cursor: pointer;
+}
+
+.sobre__experienciatexto {
+    font-weight: 600;
+}
+
+.sobre__experienciatexto--mod {
+    color: var(--cor-letra-texto);
+}
+
+/*FINAL PAGINA SOBRE */
+
+/* RODAPE FINALIZADO */
+
+.rodape {
+    color: var(--cor-letra-texto);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    flex-shrink: 0;
+}
+
+.rodape__logotipo {
+    width: 1.5em;
+    margin: 0 0.5em;
+}
+
+.rodape__link {
+    display: flex;
+}
+
+/* RODAPE FINAL FINALIZADO */
+
 @media screen and (max-width: 768px) {
     /*MENU PARA EDITAR FINALIZADO*/
 
@@ -433,17 +459,17 @@ body {
         box-shadow: 0 15px 15px -15px rgba(0, 0, 0, 0.5);
     }
 
-    /* FINAL PARA EDITAR FINALIZADO */
+    /* MENU FINALIZADO */
 
     /* INDEX */
 
     .apresentacao--mod {
         display: flex;
         flex-direction: column;
+        padding: 2em 2em;
     }
 
     .apresentacao__descricao--mod {
-        padding: 0 2em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -517,28 +543,24 @@ body {
 
     /* FINAL PROJETOS */
 
-    .descricao__instituicao{
-        display: block;
-    }
+    /* SOBRE */
 
-    .autodescricao__texto {
-        padding: 0;
-    }
-
-    .experiencia{
-        margin-left: 0;
-    }
-
-    .container__sobre {
+    .sobre--mod {
+        display: flex;
+        flex-direction: column;
         padding: 2em 2em;
     }
 
-    .container__formacao{
+    .sobre__descricaotexto--mod {
+        padding: 0;
+    }
+
+    .sobre__formacao--mod {
         display: flex;
         flex-direction: column;
     }
 
-    .formacao{
+    .sobre__formacaofundo--mod {
         margin: 0;
         display: flex;
         flex-direction: column;
@@ -548,16 +570,11 @@ body {
         height: auto;
     }
 
-    .formacao__experiencia{
-        padding-top: 1em;
-        margin-left: 0;
-    }
-
-    #formacao1{
+    .sobre__formacaofundo--puc {
         margin-bottom: 1em;
     }
 
-    .imagem__sobre {
+    .sobre__formacaoimagem--mod {
         max-width: 100%;
         vertical-align: middle;
         height: auto;
@@ -565,17 +582,24 @@ body {
         padding: 0;
     }
 
-    .experiencia {
+    .sobre__formacaoinstituicao--mod {
+        display: block;
+    }
+
+    .sobre__experiencia--mod {
+        padding-top: 4em;
+        margin-left: 0;
+    }
+
+    .sobre__experienciafundo--mod {
         max-width: 70%;
         width: auto;
+        margin-left: 0;
     }
 
-    .container__sobre{
-        display: flex;
-        flex-direction: column;
-    }
+    /* FINAL SOBRE */
 
-    .rodape {
+    .rodape--mod {
         padding: 2em 2em;
     }
 }

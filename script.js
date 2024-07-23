@@ -37,10 +37,10 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    document.getElementById("formacao1").onclick = function() {
+    document.querySelector(".sobre__formacaofundo--puc").onclick = function() {
         window.open("https://www.pucminas.br/PucVirtual/Pos-Graduacao/Paginas/Engenharia-de-Software.aspx?area=11", "_blank");
     };
-    document.getElementById("formacao2").onclick = function() {
+    document.querySelector(".sobre__formacaofundo--fatec").onclick = function() {
         window.open("https://fateccatanduva.cps.sp.gov.br/gestao-da-tecnologia-da-informacao/", "_blank");
     };
 });
