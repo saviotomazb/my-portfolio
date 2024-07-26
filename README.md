@@ -3,7 +3,7 @@
 <p align="center">
  <a href="#tech">Tecnologias</a> • 
  <a href="#sec">Seções</a> • 
- <a href="#aut">Autor</a> •
+ <a href="#aut">Autor</a>
 
 </p>
 
@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img src="https://github.com/saviotomazb/my_portfolio/blob/main/images/Screenshot_portfolio.png" alt="Página inicial" width="400px">
+    <img src="https://github.com/saviotomazb/my_portfolio/blob/main/images/Screenshot_portfolio.png" alt="Página inicial" width="1000px">
 </p>
 
 <h2 id="tech">🔧 Tecnologias</h2>
@@ -27,13 +27,12 @@
 - BEM - Block Element Modifier
 
 <h2 id="sec">📚 Seções</h2>
-Esse projeto é composto por 3 seções:
-
-- Página Inicial
+Esse projeto é composto por 3 seções:<br><br>
+- <b>Página Inicial</b>
 Apresentação.
-- Projetos
+- <b>Projetos</b>
 É exibido os projetos desenvolvidos por mim ou em colaboração.
-- Sobre mim
+- <b>Sobre mim</b>
 Contextualização sobre quem eu sou, quais as minhas formações acadêmicas e experiências profissionais.
 
 <h3>Clone</h3>
