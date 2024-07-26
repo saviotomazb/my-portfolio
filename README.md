@@ -28,11 +28,11 @@
 
 <h2 id="sec">📚 Seções</h2>
 Esse projeto é composto por 3 seções:<br><br>
-• <b>Página Inicial</b><br>
-Apresentação.
-• <br><b>Projetos</b><br>
-É exibido os projetos desenvolvidos por mim ou em colaboração.
-• <br><b>Sobre mim</b><br>
+<b>• Página Inicial</b><br>
+Apresentação.<br>
+<b>• Projetos</b><br>
+É exibido os projetos desenvolvidos por mim ou em colaboração.<br>
+<b>• Sobre mim</b><br>
 Contextualização sobre quem eu sou, quais as minhas formações acadêmicas e experiências profissionais.
 
 <h3>Clone</h3>
