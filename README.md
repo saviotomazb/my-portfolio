@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <b>Página dedicada a mostrar meus projetos, carreira e trajetória</b>
+    <b>Página dedicada a mostrar meus projetos, carreira e trajetória.</b>
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ git clone https://github.com/saviotomazb/my_portfolio
   <tr>
     <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/88664171?v=4" width="100px;" alt="Foto de perfil de Sávio Tomaz"/><br>
+        <img src="https://avatars.githubusercontent.com/u/88664171?v=4" width="90px;" alt="Foto de perfil de Sávio Tomaz"/><br>
         <sub>
           <b>Sávio Tomaz</b>
         </sub>
