@@ -21,18 +21,18 @@
 
 <h2 id="tech">🔧 Tecnologias</h2>
 
-- HTML
-- CSS
-- JavaScript
-- BEM - Block Element Modifier
+• HTML
+• CSS
+• JavaScript
+• BEM - Block Element Modifier
 
 <h2 id="sec">📚 Seções</h2>
 Esse projeto é composto por 3 seções:<br><br>
-- <b>Página Inicial</b>
+• <b>Página Inicial</b><br>
 Apresentação.
-- <b>Projetos</b>
+• <b>Projetos</b><br>
 É exibido os projetos desenvolvidos por mim ou em colaboração.
-- <b>Sobre mim</b>
+• <b>Sobre mim</b><br>
 Contextualização sobre quem eu sou, quais as minhas formações acadêmicas e experiências profissionais.
 
 <h3>Clone</h3>
