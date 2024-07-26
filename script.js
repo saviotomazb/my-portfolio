@@ -16,40 +16,53 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLink = document.querySelectorAll(".header__link--mod");
     navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-    const linkPortfolio = document.querySelector(".projeto__assunto--portfolio");
-    if (linkPortfolio) {
-        linkPortfolio.onclick = function() {
-            window.open("https://github.com/saviotomazb/my_portfolio", "_blank");
-        };
-    } else {
-        console.error("Elemento com a classe .projeto__assunto--portfolio não encontrado.");
+    if (window.location.pathname.includes('Projetos.html')) {
+        const linkPortfolio = document.querySelector(".projeto__assunto--portfolio");
+        if (linkPortfolio) {
+            linkPortfolio.onclick = function() {
+                window.open("https://github.com/saviotomazb/my_portfolio", "_blank");
+            };
+        } else {
+            console.error("Elemento com a classe .projeto__assunto--portfolio não encontrado.");
+        }
+
+        const linkBicicletaria = document.querySelector(".projeto__assunto--bicicletaria")
+        if (linkBicicletaria) {
+            linkBicicletaria.onclick = function() {
+                window.open("https://github.com/saviotomazb/Bicicletaria4S", "_blank");
+            };
+        } else {
+            console.error("Elemento com a classe .projeto__assunto--bicicletaria não encontrado.");
+        }
     }
 
-    const linkPuc = document.querySelector(".sobre__formacaofundo--puc");
-    if (linkPuc) {
-        linkPuc.onclick = function() {
-            window.open("https://www.pucminas.br/PucVirtual/Pos-Graduacao/Paginas/Engenharia-de-Software.aspx?area=11", "_blank");
-        };
-    } else {
-        console.error("Elemento com a classe .sobre__formacaofundo--puc não encontrado.");
-    }
-
-    const linkFatec = document.querySelector(".sobre__formacaofundo--fatec");
-    if (linkFatec) {
-        linkFatec.onclick = function() {
-            window.open("https://fateccatanduva.cps.sp.gov.br/gestao-da-tecnologia-da-informacao/", "_blank");
-        };
-    } else {
-        console.error("Elemento com a classe .sobre__formacaofundo--fatec não encontrado.");
-    }
-
-    const linkExp = document.querySelector(".sobre__experienciafundo--mod");
-    if (linkExp) {
-        linkExp.onclick = function() {
-            window.location.href = "/Projetos.html";
-        };
-    } else {
-        console.error("Elemento com a classe .sobre__experienciafundo--mod não encontrado.");
+    if (window.location.pathname.includes('Sobre.html')){
+        const linkPuc = document.querySelector(".sobre__formacaofundo--puc");
+        if (linkPuc) {
+            linkPuc.onclick = function() {
+                window.open("https://www.pucminas.br/PucVirtual/Pos-Graduacao/Paginas/Engenharia-de-Software.aspx?area=11", "_blank");
+            };
+        } else {
+            console.error("Elemento com a classe .sobre__formacaofundo--puc não encontrado.");
+        }
+    
+        const linkFatec = document.querySelector(".sobre__formacaofundo--fatec");
+        if (linkFatec) {
+            linkFatec.onclick = function() {
+                window.open("https://fateccatanduva.cps.sp.gov.br/gestao-da-tecnologia-da-informacao/", "_blank");
+            };
+        } else {
+            console.error("Elemento com a classe .sobre__formacaofundo--fatec não encontrado.");
+        }
+    
+        const linkExp = document.querySelector(".sobre__experienciafundo--mod");
+        if (linkExp) {
+            linkExp.onclick = function() {
+                window.location.href = "/Projetos.html";
+            };
+        } else {
+            console.error("Elemento com a classe .sobre__experienciafundo--mod não encontrado.");
+        }
     }
 
     window.addEventListener('scroll', function() {
