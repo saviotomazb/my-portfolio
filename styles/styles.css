@@ -14,7 +14,8 @@
 }
 
 html {
-    height: 100%;
+    /*height: 100%;*/
+    min-height: 100vh;
 }
 
 body {
@@ -22,15 +23,16 @@ body {
     font-family: var(--fonte);
     opacity: 0;
     transition: opacity 0.5s ease;
-    height: 100%;
     display: flex;
     flex-direction: column;
+    /*height: 100%;*/
+    min-height: 100vh;
 }
 
 .header {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 10vh;
     justify-content: flex-end;
     flex-shrink: 0;
 }
@@ -285,7 +287,7 @@ body {
     margin-left: 2em;
     margin-bottom: 0.5em;
     display: flex;
-    gap: 2em;
+    gap: 1em;
     align-items: center;
 }
 
@@ -301,7 +303,7 @@ body {
 }
 
 .sobre__formacaoimagem {
-    width: 15%;
+    width: 20%;
     border-radius: 50%;
 }
 
@@ -541,14 +543,12 @@ body {
 
     .sobre__formacaoimagem--mod {
         max-width: 100%;
-        vertical-align: middle;
+        /*vertical-align: middle;*/
         height: auto;
-        margin: 0;
-        padding: 0;
     }
 
     .sobre__formacaoinstituicao--mod {
-        display: block;
+        /*display: block;*/
     }
 
     .sobre__experiencia--mod {
