@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const linkExp = document.querySelector(".sobre__experienciafundo--mod");
         if (linkExp) {
             linkExp.onclick = function() {
-                window.location.href = "/Projetos.html";
+                window.location.href = "projetos.html";
             };
         } else {
             console.error("Elemento com a classe .sobre__experienciafundo--mod não encontrado.");
