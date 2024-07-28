@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLink = document.querySelectorAll(".header__link--mod");
     navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-    if (window.location.pathname.includes('Projetos.html')) {
+    if (window.location.pathname.includes('projetos.html')) {
         const linkPortfolio = document.querySelector(".projeto__assunto--portfolio");
         if (linkPortfolio) {
             linkPortfolio.onclick = function() {
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    if (window.location.pathname.includes('Sobre.html')){
+    if (window.location.pathname.includes('sobre.html')){
         const linkPuc = document.querySelector(".sobre__formacaofundo--puc");
         if (linkPuc) {
             linkPuc.onclick = function() {
