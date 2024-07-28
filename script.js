@@ -74,19 +74,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    var path = window.location.pathname;
-    path = path.replace(/^\/|\/$/g, '');
+    var path = window.location.pathname.split("/").pop().toLowerCase();
+    console.log("Current path:", path);
     var links = document.querySelectorAll('.header__link');
     var defaultColor = getComputedStyle(document.documentElement).getPropertyValue('--cor-letra-titulo');
     links.forEach(function(link) {
-        var href = link.getAttribute('href');
+        var href = link.getAttribute('href').toLowerCase();  // Converte href para minúsculas
+        console.log("Link href:", href);
         if (path === href) {
+            console.log("Match found for:", href);
             link.style.fontWeight = '800';
             link.style.color = defaultColor;
         }
         link.addEventListener('click', function(event) {
             if (path === href) {
                 event.preventDefault();
+                console.log("Click prevented for:", href);
             }
         });
     });

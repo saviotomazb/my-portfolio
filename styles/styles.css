@@ -14,7 +14,6 @@
 }
 
 html {
-    /*height: 100%;*/
     min-height: 100vh;
 }
 
@@ -25,7 +24,6 @@ body {
     transition: opacity 0.5s ease;
     display: flex;
     flex-direction: column;
-    /*height: 100%;*/
     min-height: 100vh;
 }
 
@@ -287,7 +285,7 @@ body {
     margin-left: 2em;
     margin-bottom: 0.5em;
     display: flex;
-    gap: 1em;
+    gap: 2em;
     align-items: center;
 }
 
@@ -302,9 +300,18 @@ body {
     border-color: #0040ff;
 }
 
+.sobre__formacaoimagemfundo {
+    width: auto;
+    height: 5em;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .sobre__formacaoimagem {
-    width: 20%;
     border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .sobre__formacaoinstituicao--mod {
@@ -535,20 +542,17 @@ body {
         justify-content: center;
         max-width: 100%;
         height: auto;
+        gap: 1em;
     }
 
     .sobre__formacaofundo--puc {
         margin-bottom: 1em;
     }
 
-    .sobre__formacaoimagem--mod {
-        max-width: 100%;
-        /*vertical-align: middle;*/
+    .sobre__formacaoimagemfundo--mod {
+        max-width: 5em;
+        vertical-align: middle;
         height: auto;
-    }
-
-    .sobre__formacaoinstituicao--mod {
-        /*display: block;*/
     }
 
     .sobre__experiencia--mod {
